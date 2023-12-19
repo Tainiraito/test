@@ -5,3 +5,4 @@ for coursera test
 
 - feature-A
 - fix-B
+- faeture-C
