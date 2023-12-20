@@ -11,12 +11,15 @@
 - 对于字符 `>`（great than），采用 `&gt;` 进行转义。
 - 对于字符 `&`（ampersand），采用 `&amp;` 进行转义。
 <br />
+
 - 对于字符 `©` (corpright)，采用 `&corp;` 进行转义。
 - 对于字符 `"` (quote)，采用 `&quot;` 进行转义。
 <br />
+
 - `&nbsp;` （non-breaking&nbsp;space）用于避免多个单词分开换行。
 	- 尽量不要将该符号滥用于留出多个空格。
 <br />
+
 注意：不要忘记分号。
 
 
@@ -30,17 +33,20 @@
 ```
 $ git config --global user.name "Firstname Lastname"
 ```
-设置姓名，用希望的昵称替换 `Fistname Lastname` 部分。<br />
+设置姓名，用希望的昵称替换 `Fistname Lastname` 部分。
+<br />
 
 ```
 $ git config --global user.email "your_email@example.com"
 ```
-设置邮箱地址，用希望的邮箱替换 `your_email@example.com` 部分。<br />
+设置邮箱地址，用希望的邮箱替换 `your_email@example.com` 部分。
+<br />
 
 ```
 $ git config --global color.ui auto
 ```
-提高命令输出可读性。<br />
+提高命令输出可读性。
+<br />
 
 完成后会在“~/.gitconfig”中生成配置文件，也可以直接编辑保存。
 
