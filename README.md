@@ -58,6 +58,15 @@
 - `alt` 属性用于帮助视障用户，以及无法查看图片时提供说明。
 - `title` 属性在指针悬停时提供信息
 
+如果需要在图片底部添加说明，使用 `figure` 和 `figcaption` 
+```
+<figure>
+    <img src="路径" alt="说明">
+    <br />
+    <figcaption>图片说明</figcaption>
+<figure>
+```
+<br />
 
 ### CSS3
 
@@ -149,15 +158,18 @@ article p {    //所有article元素下的所有p元素，包括 article > div >
 
 - `:active` 点击的样式
 
-- `:nth-child(...)` 针对某元素下的某些子元素，可以输入数字，也可以是符合规则的，如奇数偶数等
+- `:nth-child(...)` 针对某元素下的某些子元素，可以输入数字，也可以是符合规则的，如奇数偶数等。
+	- 例如 `div:nth-child(odd)` 针对奇数的div元素进行样式调整。
 
 - 以及其他很多……
 
 
 
-
-
-
+---
+待记录：《HTML、CSS设计与构建网站》
+- 使用外部css p239
+- 继承 p244
+---
 
 # Git笔记
 

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="pragma" content="no-cache" />
 	<title>hello coursera</title>
 
 	<style>
@@ -10,6 +11,7 @@
 			font-size: 36px;
 			color: blue;
 			text-align: center;
+			font-family: JetBrains Mono;
 		}
 
 		p{
@@ -23,9 +25,9 @@
 
         a:link, a:visited {
         	text-decoration: none;
-        	background-color: #f4f4f4;
-        	border: 1px solid #cccccc;
-        	color: black;
+        	background-color: #ffffff;
+        	border: 1px solid #0052D9;
+        	color: #0052D9;
         	border-radius: 4px;
         	display: block;
         	width: 400px;
@@ -35,9 +37,23 @@
         }
 
         a:hover, a:active {
-        	background-color: #cccccc;
+        	background-color: #F2F3FF;
         	border: 1px solid blue;
-        	color:blue;
+        	color:#0052D9;
+        }
+
+        body h2:nth-child(odd) {
+        	background-color: #f4f4f4;
+        	font-size: 20px;
+        }
+
+        body li:nth-child(3):hover {
+        	font-size: 24px;
+        	color: blue;
+        }
+
+        body {
+        	background-color: #f3f3f3;
         }
 
 	</style>
@@ -47,14 +63,72 @@
     <p>Use browser-sync</p>
     <p>another try</p>
     <ul>
-    	<li><a href="#title">menu1</a></li>
-    	<li><a href="#section13">menu2</a></li>
-    	<li><a href="www.baidu.com">menu3</a></li>
+    	<li><a href="#title">top</a></li>
+    	<li><a href="#section13">section13</a></li>
+    	<li><a href="http://www.baidu.com">百度一下，你就知道</a></li>
     </ul>
 
     <a href="https://github.com/Tainiraito/coursera-test" title="Lumine's github" target="_blank">前往 github.com:Tainiraito/coursera-test .</a>
-    <h2>Section1</h2>
-    <h2>Section2</h2>
+    <h2>Section1 Table</h2>
+    <table>
+    	<!-- 表格 -->
+    	<thead>
+    		<tr>
+    			<th>No.</th>
+    			<th>Name</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<th>1</th>
+    			<td>Zhao</td>
+    		</tr>
+    		<tr>
+    			<th>2</th>
+    			<td rowspan="2">Qian</td>
+    		</tr>
+    		<tr>
+    			<th>3</th>
+    			<!-- <td>Zhao</td> 跨行所以不需要 -->
+    		</tr>
+    		<tr>
+    			<th>4</th>
+    			<td>Zhao</td>
+    		</tr>
+    		<tr>
+    			<th colspan="2">- END -</th>
+    			<!-- <td>Zhao</td> 跨列所以不需要 -->
+    		</tr>
+    	</tbody>
+    </table>
+
+    <h2>Section2 Form</h2>
+    <!-- 表单 -->
+	<p>Name:<input type="text" name="name" placeholder="Enter name" /></p>
+	<p>Password:<input type="password" name="password" placeholder="Enter password" /></p>
+	<p>Remark:<textarea name="remark">Enter remark here...</textarea> </p>
+	<p>
+		Gender: 
+		<input type="radio" name="gender" value="male" checked="checked" />Male
+		<input type="radio" name="gender" value="female" />Female
+	</p>
+	<p>
+		Favor:
+		<input type="checkbox" name="favor" value="animation" />Animation
+		<input type="checkbox" name="favor" value="comic" />Comic
+		<input type="checkbox" name="favor" value="game" />Game
+		<input type="checkbox" name="favor" value="novel" />Novel
+	</p>
+	<p>
+		Language:
+		<select name="language">
+			<option value="zh">ZH</option>
+			<option value="en" selected="selected">EN</option>
+			<option value="jp">JP</option>
+		</select>
+	</p>
+	<button>Nothing Happen</button>
+
     <h2>Section3</h2>
     <h2>Section4</h2>
     <h2>Section5</h2>
