@@ -46,3 +46,12 @@ body li:nth-child(3):hover {
 body {
 	background-color: #f3f3f3;
 }
+
+#inheritedTest {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#inheritedTest > p {
+    color: red;
+}
